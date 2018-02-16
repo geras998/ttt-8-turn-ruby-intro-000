@@ -15,9 +15,10 @@ def move(board, position, char)
 end
 
 def turn(board)
-  puts "Please enter 1-9:"
-  position = gets.chomp
-  position = input_to_index(position)
+  loop do
+    puts "Please enter 1-9:"
+    position = gets.chomp
+    position = input_to_index(position)
   valid_move?(board, position)
 end
 
