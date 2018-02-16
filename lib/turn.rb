@@ -20,6 +20,7 @@ def turn(board)
     position = gets.chomp
     position = input_to_index(position)
   end while !valid_move?(board, position)
+  move(board, position, "X")
 end
 
 def input_to_index(input)
